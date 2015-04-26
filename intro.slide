@@ -1,0 +1,20 @@
+Praktisk introduksjon til GO
+
+Knowit Sør 
+
+Tom Christian Woods
+
+ 
+* Hva skal vi se på?
+
+- Historie
+- Installasjon
+- Tooling (GO tool)
+- Språket
+- Communicating Sequential Processes
+- Generell bruk (Testing, Web tjenester og Biblioteker) 
+- Konklusjon
+
+* Example Go code
+ 
+.play hello.go
