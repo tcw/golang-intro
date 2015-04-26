@@ -12,9 +12,41 @@ Tom Christian Woods
 - Tooling (GO tool)
 - Språket
 - Communicating Sequential Processes
-- Generell bruk (Testing, Web tjenester og Biblioteker) 
+- Generell bruk (Bruke/skrive Biblioteker, Testing og Web tjenester) 
 - Konklusjon
 
-* Example Go code
- 
+* Historie
+
+- Hvem har laget det?
+- Hvorfor ble GO laget?
+- Hvorfor er ikke GO mer likt 'Haskell'?
+- Hvem bruker GO idag?
+
+* Installasjon
+
+.link http://golang.org/ GO hjemmeside
+
+.link https://golang.org/doc/install GO installasjon
+
+Lager GOPATH under $HOME/Go:
+
+ mkdir Go
+ cd Go
+ mkdir src
+ mkdir pkg
+ mkdir bin
+
+Eksporter:
+
+ export GOROOT=/usr/local/go
+ export GOPATH=$HOME/Go
+ export GOBIN=$GOPATH/bin
+ export PATH=$PATH:$GOROOT/bin:GOBIN
+
+
+* Tooling
+
+
+* Kode eksempel
+
 .play hello.go
