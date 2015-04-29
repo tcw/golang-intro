@@ -7,18 +7,19 @@ Tom Christian Woods
  
 * Hva skal vi se på?
 
-- Historie
+- Introduksjon
 - Installasjon
-- Tooling (GO tool)
+- Tooling (GO kommandoen)
 - Språket
 - Communicating Sequential Processes
 - Generell bruk (Bruke/skrive Biblioteker, Testing og Web tjenester) 
 - Konklusjon
 
-* Historie
+* Introduksjon
 
 - Hvem har laget det?
 - Hvorfor ble GO laget?
+- Hvilken type språk er GO?
 - Hvorfor er ikke GO mer likt 'Haskell'?
 - Hvem bruker GO idag?
 
@@ -26,7 +27,10 @@ Tom Christian Woods
 
 .link http://golang.org/ GO hjemmeside
 
-.link https://golang.org/doc/install GO installasjon
+Last ned og kjør:
+
+ sudo tar -C /usr/local -xzf go1.4.2.linux-amd64.tar.gz
+
 
 Lager GOPATH under $HOME/Go:
 
@@ -46,7 +50,34 @@ Eksporter:
 
 * Tooling
 
+Hva kan go kommandoen gjøre?
 
-* Kode eksempel
+- Kjøre en fil (*go*run*fil.go*)
+- Bygge en fil (*go*build*fil.go*)
+- Installere en fil (*go*install*fil.go*) som mvn install
+- Hente et biblitek fra ekstern kilde (*go*get*http://github.com/tcw/go-prog*)
+- Kjøre tester (*go*test*fil_test.go*)
+- Kjøre benchmarking (*go*test*-bench=.*fil_test.go*)
+- Kjøre profiling (*go*tool*pprof*fil*cpu.pprof*)
 
-.play hello.go
+
+* Språket - Hello world!
+.play -numbers hello.go
+
+* Språket - Global variabel
+.play -numbers global_variabel.go
+
+* Språket - Type inference
+.play -numbers type_inference.go
+
+* Språket - Ny tildeling
+.play -numbers reassignment.go
+
+* Språket - If Else
+.play -numbers if.go
+
+* Språket - Looping
+.play -numbers for.go
+
+* Språket - Looping
+.play -numbers for2.go
