@@ -81,3 +81,12 @@ Hva kan go kommandoen gjøre?
 
 * Språket - Looping
 .play -numbers for2.go
+
+* Språket - Funksjoner
+.play -numbers fn1.go
+
+* Språket - Funksjoner
+.play -numbers fn2.go
+
+* Språket - Funksjoner
+.play -numbers fn3.go
