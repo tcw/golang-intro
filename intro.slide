@@ -73,6 +73,12 @@ Hva kan go kommandoen gjøre?
 * Språket - Ny tildeling
 .play -numbers reassignment.go
 
+* Språket - Array
+.play -numbers array.go
+
+* Språket - Slice
+.play -numbers slice.go
+
 * Språket - If Else
 .play -numbers if.go
 
@@ -94,5 +100,5 @@ Hva kan go kommandoen gjøre?
 * Språket - Metoder
 .play -numbers method.go
 
-* Språket - Allocation
-.play -numbers allocation.go
+* Språket - Interface
+.play -numbers interface.go
