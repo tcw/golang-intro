@@ -90,3 +90,9 @@ Hva kan go kommandoen gjøre?
 
 * Språket - Funksjoner
 .play -numbers fn3.go
+
+* Språket - Metoder
+.play -numbers method.go
+
+* Språket - Allocation
+.play -numbers allocation.go
