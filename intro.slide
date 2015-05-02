@@ -112,3 +112,14 @@ Hva kan go kommandoen gjøre?
 
 * Communicating Sequential Processes (CSP)
 
+* CSP - Go routines
+.play -numbers csp1.go
+
+* CSP - Go routines
+.play -numbers csp2.go 
+
+* CSP - Go routines
+.play -numbers csp3.go 
+
+* CSP - Go routines
+.play -numbers csp4.go 
