@@ -73,6 +73,12 @@ Hva kan go kommandoen gjøre?
 * Språket - Ny tildeling
 .play -numbers reassignment.go
 
+* Språket - Konstanter
+.play -numbers constant.go
+
+* Språket - Init
+.play -numbers init.go
+
 * Språket - Array
 .play -numbers array.go
 
