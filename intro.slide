@@ -68,10 +68,10 @@ Hva kan go kommandoen gjøre?
 .play -numbers global_variabel.go
 
 * Språket - Type inference
-.play -numbers type_inference.go
+.play -numbers type_inference.go /^func main/,/^}/
 
 * Språket - Ny tildeling
-.play -numbers reassignment.go
+.play -numbers reassignment.go /^func main/,/^}/
 
 * Språket - Konstanter
 .play -numbers constant.go
@@ -80,19 +80,19 @@ Hva kan go kommandoen gjøre?
 .play -numbers init.go
 
 * Språket - Array
-.play -numbers array.go
+.play -numbers array.go /^func main/,/^}/
 
 * Språket - Slice
-.play -numbers slice.go
+.play -numbers slice.go /^func main/,/^}/
 
 * Språket - If Else
-.play -numbers if.go
+.play -numbers if.go /^func main/,/^}/
 
 * Språket - Looping
-.play -numbers for.go
+.play -numbers for.go /^func main/,/^}/
 
 * Språket - Looping
-.play -numbers for2.go
+.play -numbers for2.go /^func main/,/^}/
 
 * Språket - Funksjoner
 .play -numbers fn1.go
@@ -108,3 +108,7 @@ Hva kan go kommandoen gjøre?
 
 * Språket - Interface
 .play -numbers interface.go
+
+
+* Communicating Sequential Processes (CSP)
+
