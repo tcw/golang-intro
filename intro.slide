@@ -12,12 +12,12 @@ Tom Christian Woods
 - Tooling (GO kommandoen)
 - Språket
 - Communicating Sequential Processes
-- Generell bruk (Bruke/skrive Biblioteker, Testing og Web tjenester) 
+- Generell bruk (Biblioteker, Testing og Web tjenester) 
 - Konklusjon
 
 * Introduksjon
 
-- Hvem har laget det?
+- Hvem har laget GO?
 - Hvorfor ble GO laget?
 - Hvilken type språk er GO?
 - Hvorfor er ikke GO mer likt 'Haskell'?
@@ -48,18 +48,25 @@ Eksporter:
  export PATH=$PATH:$GOROOT/bin:GOBIN
 
 
-* Tooling
+* TOOLING
 
 Hva kan go kommandoen gjøre?
 
-- Kjøre en fil (*go*run*fil.go*)
-- Bygge en fil (*go*build*fil.go*)
-- Installere en fil (*go*install*fil.go*) som mvn install
+- Kjøre en go fil (*go*run*fil.go*) - eneste som opererer på fil nivå
+- Bygge en go fil (*go*build*)
+- Installere et go program (*go*install*) som mvn install
 - Hente et biblitek fra ekstern kilde (*go*get*http://github.com/tcw/go-prog*)
-- Kjøre tester (*go*test*fil_test.go*)
-- Kjøre benchmarking (*go*test*-bench=.*fil_test.go*)
+- Kjøre tester (*go*test*)
+- Kjøre benchmarking (*go*test*-bench=.*)
 - Kjøre profiling (*go*tool*pprof*fil*cpu.pprof*)
 
+* DEMO - LAG OG KJØR ET GO PROGRAM
+
+- Forklar pakkestruktur
+- Lag et hello world eksemple
+- Installer programmet
+- Vis resultatet av installasjonen
+- Kjør programmet
 
 * Språket - Hello world!
 .play -numbers hello.go
@@ -123,3 +130,8 @@ Hva kan go kommandoen gjøre?
 
 * CSP - Go routines
 .play -numbers csp4.go 
+
+* Generell bruk - Bibliotek (Avhengiheter)
+
+- To måter å hente avhengiheter på
+

@@ -1,12 +1,24 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
+func pinger(c chan string) {
+	for {
+		c <- "ping"
+	}
+}
+func printer(c chan string) {
+	for {
+		fmt.Println(<-c)
+		time.Sleep(time.Second * 1)
+	}
+}
 func main() {
-	c := make(chan string)
-	go func() {
-		c <- "hei"
-	}()
-	val := <-c
-	fmt.Println(val)
+	var c chan string = make(chan string)
+	go pinger(c)
+	go printer(c)
+	time.Sleep(time.Second * 5)
 }
