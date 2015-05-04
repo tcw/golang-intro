@@ -71,7 +71,7 @@ Hva kan go kommandoen gjøre?
 * Språket - Hello world!
 .play -numbers hello.go
 
-* Språket - Global variabel
+* Språket - Package variabel
 .play -numbers global_variabel.go
 
 * Språket - Type inference
@@ -118,6 +118,7 @@ Hva kan go kommandoen gjøre?
 
 
 * Communicating Sequential Processes (CSP)
+TODO
 
 * CSP - Go routines
 .play -numbers csp1.go
@@ -131,7 +132,17 @@ Hva kan go kommandoen gjøre?
 * CSP - Go routines
 .play -numbers csp4.go 
 
-* Generell bruk - Bibliotek (Avhengiheter)
+* CSP select
 
-- To måter å hente avhengiheter på
+* Generell bruk - Lag et bibliotek 
+.code -numbers matte.go
+
+* Generell bruk - Bruk et 3-parts bibliotek 
+.code -numbers test1_test.go
+
+* Testing - 
+
+* Web utvikling
+
+-Martini & Gin ? 
 
