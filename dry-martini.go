@@ -21,16 +21,6 @@ type Ticket struct {
 	State       string `json:"state"`
 }
 
-func ReadStatus(p martini.Params) Ticket {
-
-	ticket := Ticket{
-		Number:      645,
-		Description: "A dummy customer ticket " + p["id"],
-		State:       "resolved",
-	}
-	return ticket
-}
-
 func main() {
 
 	m := martini.Classic()
@@ -40,9 +30,11 @@ func main() {
 		id, _ := strconv.Atoi(params["id"])
 		r.JSON(200, storage[id])
 	})
+
 	m.Post("/status", binding.Bind(Ticket{}), func(ticket Ticket, r render.Render) {
 		storage[ticket.Number] = ticket
 		r.JSON(200, ticket)
 	})
+
 	m.Run()
 }

@@ -7,7 +7,7 @@ func main() {
 	fmt.Println(res)
 }
 
-func add(a, b int) (c int) {
-	c = a + b
-	return
+func add(a, b int) int {
+	c := a + b
+	return c
 }

@@ -9,7 +9,7 @@ Tom Christian Woods
 
 - Introduksjon
 - Installasjon
-- Tooling (GO kommandoen)
+- Tooling (go kommandoen)
 - Språket
 - Communicating Sequential Processes
 - Generell bruk (Biblioteker, Testing og Web tjenester) 
@@ -102,6 +102,9 @@ Hva kan go kommandoen gjøre?
 .play -numbers for2.go /^func main/,/^}/
 
 * Språket - Funksjoner
+.play -numbers fn.go
+
+* Språket - Funksjoner
 .play -numbers fn1.go
 
 * Språket - Funksjoner
@@ -109,6 +112,9 @@ Hva kan go kommandoen gjøre?
 
 * Språket - Funksjoner
 .play -numbers fn3.go
+
+* Språket - Funksjoner
+.play -numbers fn4.go
 
 * Språket - Metoder
 .play -numbers method.go
@@ -140,9 +146,16 @@ TODO
 * Generell bruk - Bruk et 3-parts bibliotek 
 .code -numbers test1_test.go
 
-* Testing - 
+* Testing 
+
+- Ginkgo
+- testify
 
 * Web utvikling
 
--Martini & Gin ? 
+- Veldig mange web rammeverk for GO
 
+Vi skal se litt på 
+
+- Martini
+- Negroni

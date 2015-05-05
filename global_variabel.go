@@ -7,10 +7,10 @@ var (
 )
 
 func main() {
-	fmt.Printf("tekst(main) : %s\n", tekst)
-	fn1()
+	fmt.Printf("tekst-main : %s\n", tekst)
+	printTekst()
 }
 
-func fn1() {
-	fmt.Printf("tekst(fn1) : %s", tekst)
+func printTekst() {
+	fmt.Printf("tekst-printTekst : %s", tekst)
 }

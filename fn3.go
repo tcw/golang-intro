@@ -1,22 +1,15 @@
 package main
 
 import (
-	"errors"
 	"fmt"
+	"math"
 )
 
 func main() {
-	res, err := div(5, 0)
-	if err != nil {
-		fmt.Print(err)
-	} else {
-		fmt.Println(res)
-	}
+	c := applyFn(-40, math.Abs)
+	fmt.Println(c)
 }
 
-func div(a, b int) (int, error) {
-	if b == 0 {
-		return 0, errors.New("dele på 0 er tull")
-	}
-	return a / b, nil
+func applyFn(a float64, f func(float64) float64) float64 {
+	return f(a)
 }
