@@ -178,13 +178,14 @@ Motta på en channel
 * CSP - Go routines
 .play csp2.go 
 
-* CSP - Go routines
+* CSP - Go Channels
 .play csp3.go 
 
-* CSP - Go routines
+* CSP - Go routines og channels
 .play csp4.go 
 
 * CSP select
+.play csp5.go 
 
 * Demo Lag et bibliotek 
 .code matte.go
