@@ -3,11 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	tekst := "hello"
 
-	if tekst == "hello" {
-		fmt.Print(tekst)
+	if "hello" == "hello" {
+		fmt.Print("Lik")
 	} else {
-		fmt.Print("Error")
+		fmt.Print("Ulik")
 	}
 }

@@ -21,7 +21,8 @@ Tom Christian Woods
 - Hvorfor ble GO laget?
 - Hvilken type språk er GO?
 - Hvorfor er ikke GO mer likt 'Haskell'?
-- Hvem bruker GO idag?
+
+.link https://code.google.com/p/go-wiki/wiki/GoUsers Hvem bruker GO idag?
 
 * Installasjon
 
@@ -69,87 +70,135 @@ Hva kan go kommandoen gjøre?
 - Kjør programmet
 
 * Språket - Hello world!
-.play -numbers hello.go
+.play hello.go
 
 * Språket - Package variabel
-.play -numbers global_variabel.go
+.play global_variabel.go
 
 * Språket - Type inference
-.play -numbers type_inference.go /^func main/,/^}/
+.play type_inference.go /^func main/,/^}/
 
 * Språket - Ny tildeling
-.play -numbers reassignment.go /^func main/,/^}/
+.play reassignment.go /^func main/,/^}/
 
 * Språket - Konstanter
-.play -numbers constant.go
+.play constant.go
 
 * Språket - Init
-.play -numbers init.go
+.play init.go
 
 * Språket - Array
-.play -numbers array.go /^func main/,/^}/
+.play array.go /^func main/,/^}/
 
 * Språket - Slice
-.play -numbers slice.go /^func main/,/^}/
+.play slice.go /^func main/,/^}/
 
 * Språket - If Else
-.play -numbers if.go /^func main/,/^}/
+.play if.go /^func main/,/^}/
 
 * Språket - Looping
-.play -numbers for.go /^func main/,/^}/
+.play for.go /^func main/,/^}/
 
 * Språket - Looping
-.play -numbers for2.go /^func main/,/^}/
+.play for2.go /^func main/,/^}/
 
 * Språket - Funksjoner
-.play -numbers fn.go
+.play fn.go
 
 * Språket - Funksjoner
-.play -numbers fn1.go
+.play fn1.go
 
 * Språket - Funksjoner
-.play -numbers fn2.go
+.play fn2.go
 
 * Språket - Funksjoner
-.play -numbers fn3.go
+.play fn3.go
 
 * Språket - Funksjoner
-.play -numbers fn4.go
+.play fn4.go
 
 * Språket - Metoder
-.play -numbers method.go
+.play method.go
 
 * Språket - Interface
-.play -numbers interface.go
+.play interface.go
 
 
 * Communicating Sequential Processes (CSP)
-TODO
+
+- Actor modelen beskrevert i 1973 av Hewitt, Bishop og Steiger
+- CSP beskrevet i 1978 av C. A. R. Hoare
+- CSP er et meldingsystem hvor beskjeder er sendt over kanaler
+
+Forskjeller mellom CSP og Actor modellen
+
+- CSP prosesser er anonyme
+- CSP er hovedsaklig synkront
+
+* CSP
+
+Består av Goroutines og Channels
+
+Goroutines
+
+- Uavhengig kjørende fuksjon
+- Veldig billige lettvekts tråder (ikke ekte tråder)
+- Har egen stack
+
+Channel
+
+- Kan tenkes på som en kø med eller uten elementer
+
+* CSP
+
+*Goroutines*
+
+Kjør en goroutine
+
+ go fn()
+
+*Channel*
+
+Lag en channel
+
+ c := make(chan int)
+
+Sende på en channel
+
+ c <- 1
+
+Motta på en channel
+
+ value = <-c
+
 
 * CSP - Go routines
-.play -numbers csp1.go
+.play csp1.go
 
 * CSP - Go routines
-.play -numbers csp2.go 
+.play csp2.go 
 
 * CSP - Go routines
-.play -numbers csp3.go 
+.play csp3.go 
 
 * CSP - Go routines
-.play -numbers csp4.go 
+.play csp4.go 
 
 * CSP select
 
-* Generell bruk - Lag et bibliotek 
-.code -numbers matte.go
-
-* Generell bruk - Bruk et 3-parts bibliotek 
-.code -numbers test1_test.go
+* Demo Lag et bibliotek 
+.code matte.go
 
 * Testing 
 
-- Ginkgo
-- testify
+.link http://onsi.github.io/ginkgo/ Grikgo
+.link https://github.com/stretchr/testify testify
+
+* Demo - Bruk et 3-parts test bibliotek 
+.code test1_test.go
+
+* Demo - Benchmarking 
+.code bench1_test.go
 
 * Web utvikling
 
@@ -157,5 +206,9 @@ TODO
 
 Vi skal se litt på 
 
-- Martini
-- Negroni
+.link http://martini.codegangsta.io/ Martini
+.link https://github.com/codegangsta/negroni Negroni
+
+* Konklusjon
+
+* Q & A
